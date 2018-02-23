@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestViewController">
+            <connections>
+                <outlet property="textFeild" destination="Otu-5q-7ww" id="crT-an-28Z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Otu-5q-7ww">
+                    <rect key="frame" x="30" y="120" width="315" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtN-FW-3Cz">
+                    <rect key="frame" x="30" y="180" width="315" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.41574130720342473" blue="0.24594956841151261" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="1Lw-hl-xuf"/>
+                    </constraints>
+                    <state key="normal" title="发送"/>
+                    <connections>
+                        <action selector="click:" destination="-2" eventType="touchUpInside" id="NrL-rR-MFx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Otu-5q-7ww" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="100" id="4OU-DY-Ka8"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Otu-5q-7ww" secondAttribute="trailing" constant="30" id="4p0-66-EGY"/>
+                <constraint firstItem="Otu-5q-7ww" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="dlq-Jv-Nxj"/>
+                <constraint firstItem="EtN-FW-3Cz" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="g4m-yC-aFC"/>
+                <constraint firstItem="EtN-FW-3Cz" firstAttribute="top" secondItem="Otu-5q-7ww" secondAttribute="bottom" constant="30" id="u0r-Ez-feD"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="EtN-FW-3Cz" secondAttribute="trailing" constant="30" id="zxC-jg-kqK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
