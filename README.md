@@ -12,3 +12,7 @@ IOS组件化解耦之消息队列
 发送消息:
 
 [[LSMQMessageListManager shareInstance] addTopic:(id<LSMQTopicReceiveProtocol>)self topic:@"testwTopic"];
+
+接收消息:
+
+-(void)topicReceive:(id)msg topic:(NSString*)topic
